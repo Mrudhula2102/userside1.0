@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
-// import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
 import GuestEdit from './GuestEdit';
 import axios from 'axios';
@@ -23,15 +22,6 @@ const GuestView = (props) => {
         .catch(err=>console.log(err))
     },[])
 
-// const deletevalues =(id)=>{
-//     console.log("deleted",id)
-//     axios.put("http://localhost:4005/remove3/"+id)
-//     .then((response)=>{
-//         alert("DELETED")
-//     window.location.reload(false);
-//     })
-// }
-
 const updatevalues =(value)=>{
 console.log("updated",value);
 setSelected(value);
@@ -41,7 +31,7 @@ var result=
 <div>
 <div><Topbar xxx={props.checkLogout}/></div>
 <div className='bbb'>
-<Typography >Guestuser Details</Typography><br/><br/>
+<h1>Guestuser Details</h1><br/><br/>
 <TableContainer component={Paper}>
 <Table >
   <TableHead>
