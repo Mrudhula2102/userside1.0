@@ -1,0 +1,13 @@
+.aptitude-test-container {
+    width: 600px; /* Set the width of the container as per your design */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .question-box {
+    margin-top: 20px;
+  }
+  

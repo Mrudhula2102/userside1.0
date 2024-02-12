@@ -1,0 +1,26 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+ 
+}
+
+.form-box {
+  width: 700px;
+  padding:20px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; Set your desired background color */
+}
+
+.gender-group {
+  margin-top: 10px;
+  margin-bottom:20px; 
+}
+/* .button{
+  text-align: center; } */
+
+/* Add more styles as needed */

@@ -1,0 +1,30 @@
+.notepad {
+    margin: 20px;
+  }
+  
+  .notepad h2 {
+    text-align: center;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .note {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
+  .note button {
+    margin-top: 5px;
+  }
+  
