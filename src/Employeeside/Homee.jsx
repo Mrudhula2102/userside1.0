@@ -7,8 +7,8 @@ const Homee = (props) => {
     
     <div align="center">
       <div >
-    <Topbare xxx={props.checkLogout}/>
-    </div>
+    
+    </div><Topbare xxx={props.checkLogout}/>
     
    <div className='bb'>
     <div className="home-container">

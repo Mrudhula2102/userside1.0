@@ -18,9 +18,12 @@ export default function LoginCard() {
 
     navigate('/adlogin')
     }
- const movead=()=>{
-   navigate('/register')
- }
+
+    const userdata =()=> {
+
+      navigate('/userlogin')
+      }
+
   return (
     <div>
 
@@ -60,7 +63,7 @@ export default function LoginCard() {
     <div style={{display: 'flex', flexDirection: 'row' }} className='home' >
     <div >
 
-     <Card sx={{ maxWidth: 345 , marginRight: 27}} className='background'>
+     <Card sx={{ maxWidth: 345 , marginRight: 20}} className='background'>
       <CardMedia
         component="img"
         alt="admin"
@@ -84,7 +87,7 @@ export default function LoginCard() {
     </Card>
     </div>
     <div>
-   <Card sx={{ maxWidth: 345,marginRight:27 }} className='background'>
+   <Card sx={{ maxWidth: 345,marginLeft:20 }} className='background'>
       <CardMedia
         component="img"
         alt="employee"
@@ -101,34 +104,12 @@ export default function LoginCard() {
         </Typography> */}
       </CardContent>
       <CardActions>
-        <Button variant="outlined" color="success"size="medium">LogIn</Button>
+        <Button variant="outlined" color="success"size="medium" onClick={userdata}>LogIn</Button>
         {/* <Button size="small">Learn More</Button> */}
       </CardActions>
     </Card>
     </div>
-    <div>
-   <Card sx={{ maxWidth: 345,marginRight:-5 }} className='background'>
-      <CardMedia
-        component="img"
-        alt="new"
-        height="170"
-        image="https://media.istockphoto.com/id/532856363/photo/grey-keyboard-green-button-new-account.jpg?s=1024x1024&w=is&k=20&c=xnGClG9G4BcI-T2tiuCI9InAgTuflatCWwZP1JlLbmA="
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          New User
-        </Typography>
-        {/* <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography> */}
-      </CardContent>
-      <CardActions>
-        <Button variant="outlined" color="success" size="medium" onClick={movead}>LogIn</Button>
-        {/* <Button size="small">Learn More</Button> */}
-      </CardActions>
-    </Card>
-    </div>
+    
     </div>
     </div>
   );

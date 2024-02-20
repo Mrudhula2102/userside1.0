@@ -4,7 +4,7 @@ import { Button, TextField } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Topbar from '../Topbar/Topbar';
-
+import './Employeedetails.css'
 
 
 
@@ -31,11 +31,14 @@ const Employeedetails = (props) => {
     }
   return (
     <div align="center">
-      <div>
+      <div >
     <Topbar xxx={props.checkLogout}/>
-   </div>
-      <div className='div'>
-      <h1>Employee Details</h1>
+    </div>
+    <div className='profile-container'>
+    <div className="profile-box">
+
+      <h1>EMPLOYEE DETAILS</h1>
+
       <TextField  label="ID" variant="filled" name="idd" value={employee.idd} onChange={inputhandler}/><br/><br/>
       <TextField  label="name" variant="filled" name="ename" value={employee.ename}  onChange={inputhandler}/><br/><br/>
       <TextField  label="Age" variant="filled" name="eage" value={employee.eage}  onChange={inputhandler} /><br/><br/>
@@ -45,10 +48,14 @@ const Employeedetails = (props) => {
        <option value="INACTIVE">INACTIVE</option>
       </select>
       
+      
       <br/><br/>
+      <br/>
       <Button variant="contained" onClick={savedata} >SUBMIT</Button>
+      </div>
     </div>
     </div>
+    
   )
 }
 

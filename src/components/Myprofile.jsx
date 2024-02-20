@@ -1,6 +1,6 @@
+//Myprofile.jsx
 import React, { useState } from 'react'
 import Topbar from '../Topbar/Topbar'
-
 import './Myprofile.css'
 import { Button} from '@mui/material'
 
@@ -40,10 +40,11 @@ const Myprofile = (props) => {
   
   return (
     <div>
-      <div>
-       <Topbar xxx={props.checkLogout}/></div>
-       <div className='bbb'>
-      <div className="profile-container">
+      <div >
+    <Topbar xxx={props.checkLogout}/>
+    </div>
+    <div className='profile-container'>
+      <div className="profile-box">
       <h1>User Profile</h1>
       <div className="profile-details">
         <div>
@@ -103,17 +104,19 @@ const Myprofile = (props) => {
           )}
         </div>
       </div>
+      
       <div className="button-container">
         {editing ? (
           <>
-            <Button onClick={handleSave}>Save</Button>
-            <Button onClick={handleCancel}>Cancel</Button>
+            <Button onClick={handleSave} variant='contained'>Save</Button>
+            <Button onClick={handleCancel} variant='contained'>Cancel</Button>
           </>
         ) : (
-          <Button onClick={handleEditToggle}>Edit</Button>
+          
+          <Button onClick={handleEditToggle} variant='contained'>Edit</Button>
         )}
       </div>
-      </div>
+    </div>
     </div>
     </div>
   )

@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-
 import Topbar from '../Topbar/Topbar'
 import { Button, TextField } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './Myprofile.css'
+import './Training.css'
 
 
 
@@ -31,11 +30,13 @@ const Training = (props) => {
     }
   return (
     <div align="center">
-      <div>
+      
+      
+      <div >
     <Topbar xxx={props.checkLogout}/>
- </div>
-       <div className='bbb'>
-      <div className='div'>
+    </div>
+    <div className='profile-container'>
+    <div className="profile-box">
       <h1>Employee Training Status</h1>
       <TextField  label="ID" variant="filled" name="idd" value={training.idd} onChange={inputhandler}/><br/><br/>
       <TextField  label="name" variant="filled" name="ename" value={training.name}  onChange={inputhandler}/><br/><br/>
@@ -47,6 +48,7 @@ const Training = (props) => {
     </div>
     </div>
     </div>
+    
   )
 }
 

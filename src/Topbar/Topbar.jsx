@@ -3,9 +3,9 @@ import React, {useState } from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BadgeIcon from '@mui/icons-material/Badge';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+
 import HomeIcon from '@mui/icons-material/Home';
-import WorkIcon from '@mui/icons-material/Work';
+
 import "./topbar.css";
 import { useNavigate } from 'react-router-dom';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
@@ -75,12 +75,7 @@ const Topbar = () => {
             <li><a href="/Training" className={activeLink === '/Training' ? 'active' : ''} onClick={() => handleClick('/Training')}
             style={fontSizeStyle} ><HowToRegIcon fontSize='small'/> Training</a></li>
 
-        <li> <a href="/Guestuser" className={activeLink === '/Guestuser' ? 'active' : ''} onClick={() => handleClick('/Guestuser')} 
-        style={fontSizeStyle}><PeopleAltIcon fontSize='small'/> Guest User Details</a></li>
-
-          <li><a href="/Recruitment" className={activeLink === '/Recruitment' ? 'active' : ''} onClick={() => handleClick('/Recruitment')}
-          style={fontSizeStyle}><WorkIcon fontSize='small'/>Recruitment</a></li>
-
+        
               <li>
                 <button onClick={handleLogout} style={fontSizeStyle}>
                   <ExitToAppIcon fontSize="small" /> Logout
